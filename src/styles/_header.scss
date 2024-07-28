@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  padding: 16px 162px 0px 162px;
+  padding: 16px 162px 1px;
   justify-content: center;
 
   &__menu {
@@ -13,14 +13,10 @@
       --transparent-stroke,
       linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.13) 0%,
-        rgba(153, 153, 153, 0.13) 100%
+        rgba(255 255 255 / 0.13%) 0%,
+        rgba(153 153 153 / 0.13%) 100%
       )
     );
-  }
-
-  &__logo {
-    display: flex;
   }
 
   &__logo {
@@ -28,7 +24,7 @@
 
     &-title {
       color: $white;
-      font-family: "Irish Grover";
+      font-family: "Irish Grover", sans-serif;
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
@@ -62,7 +58,7 @@
       text-decoration: none;
       list-style-type: none;
       color: $white;
-      font-family: Inter;
+      font-family: Inter, sans-serif;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -80,8 +76,8 @@
         --transparent-stroke,
         linear-gradient(
           180deg,
-          rgba(255, 255, 255, 0.13) 0%,
-          rgba(153, 153, 153, 0.13) 100%
+          rgba(255 255 255 / 0.13%) 0%,
+          rgba(153 153 153 / 0.13%) 100%
         )
       );
 
@@ -89,7 +85,7 @@
         text-decoration: none;
         list-style-type: none;
         color: $white;
-        font-family: Inter;
+        font-family: Inter, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
