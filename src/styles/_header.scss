@@ -1,0 +1,114 @@
+.header {
+  padding: 32px 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+
+  &__logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    &-img {
+      width: 50px;
+      height: 32px;
+    }
+
+    &-title {
+      color: $black;
+      font-family: Montserrat, sans-serif;
+      font-size: 34px;
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+
+  &__navbar {
+    &-list {
+      display: flex;
+      list-style-type: none;
+
+      &-title {
+        padding-right: 75px;
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        // TODO: [Enver] don't give styles to tag names
+        a {
+          text-decoration: none;
+          color: $black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  &__burger {
+    display: flex;
+    gap: 45px;
+    padding: 0 64px 0 0;
+
+    a {
+      button {
+        border: none;
+        background: gray;
+        text-align: center;
+      }
+    }
+
+    &-alert {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/mdi_account-alert-outline.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-search {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/akar-icons_search.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-like {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/akar-icons_heart.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-cart {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/ant-design_shopping-cart-outlined.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position:    center;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
