@@ -1,4 +1,100 @@
 .header {
   display: flex;
-  background-color: $dark;
+  padding: 16px 162px 0px 162px;
+  justify-content: center;
+
+  &__menu {
+    display: flex;
+    padding: 16px 48px;
+    align-items: center;
+    gap: 152px;
+    border-radius: 24px;
+    background: var(
+      --transparent-stroke,
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.13) 0%,
+        rgba(153, 153, 153, 0.13) 100%
+      )
+    );
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__logo {
+    display: flex;
+
+    &-title {
+      color: $white;
+      font-family: "Irish Grover";
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__navbar-list {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+
+    &-title,
+    a {
+      text-decoration: none;
+      list-style-type: none;
+      color: $white;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &__sign {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-login {
+      text-decoration: none;
+      list-style-type: none;
+      color: $white;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &-signup {
+      display: flex;
+      padding: 16px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 16px;
+      background: var(
+        --transparent-stroke,
+        linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.13) 0%,
+          rgba(153, 153, 153, 0.13) 100%
+        )
+      );
+
+      & a {
+        text-decoration: none;
+        list-style-type: none;
+        color: $white;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+  }
 }
