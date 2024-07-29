@@ -1,4 +1,3 @@
-/* stylelint-disable */
 .header {
   display: flex;
   padding: 16px 162px;
@@ -14,8 +13,9 @@
       --transparent-stroke,
       linear-gradient(
         180deg,
-        rgba(255 255 255 / 0.13) 0%,
-        rgba(153 153 153 / 0.13) 100%
+        rgba(255 255 255 / 13%) 0%,
+
+        rgba(153 153 153 / 13%) 100%
       )
     );
   }
@@ -82,8 +82,8 @@
         --transparent-stroke,
         linear-gradient(
           180deg,
-          rgba(255 255 255 / 0.13) 0%,
-          rgba(153 153 153 / 0.13) 100%
+          rgba(255 255 255 / 13%) 0%,
+          rgba(153 153 153 / 13%) 100%
         )
       );
 
