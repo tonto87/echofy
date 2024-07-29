@@ -1,3 +1,85 @@
 .mwlimits {
   display: flex;
+  position: relative;
+
+  &__title {
+    display: flex;
+    width: 1048px;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 3;
+    padding: 148px 162px;
+
+    &-h1 {
+      color: $white;
+      font-family: Inter, sans-serif;
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100px;
+    }
+
+    &-p {
+      color: $grey;
+      font-family: Inter, sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-button {
+      display: flex;
+      width: 186px;
+      padding: 22px 60px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 16px;
+      background: $red;
+      color: $white;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $white;
+        border-color: $white;
+        color: $red;
+      }
+    }
+  }
+
+  &__rectangle-color {
+    width: 976px;
+    height: 1100px;
+    z-index: 1;
+    transform: rotate(41.443deg);
+    flex-shrink: 0;
+    background: conic-gradient(
+      from 134deg at 50% 50%,
+      rgba(24 26 30 93%) 62.7557deg,
+      #e52996 173.1274deg,
+      rgba(27 79 144 95%) 206.3422deg
+    );
+    filter: blur(96px);
+    position: absolute;
+    right: 0;
+  }
+
+  &__rectangle-pic {
+    z-index: 2;
+    position: absolute;
+    right: 196px;
+    top: 96px;
+
+    &-img {
+      width: 528px;
+      height: auto;
+    }
+  }
 }
