@@ -1,14 +1,14 @@
 /* stylelint-disable */
 .header {
   display: flex;
-  padding: 16px 162px 1px;
+  padding: 16px 162px;
   justify-content: center;
 
   &__menu {
     display: flex;
-    padding: 16px 48px;
+    width: 100%;
+    padding: 12px 48px;
     align-items: center;
-    gap: 152px;
     border-radius: 24px;
     background: var(
       --transparent-stroke,
@@ -33,20 +33,25 @@
     }
   }
 
-  &__navbar-list {
+  &__navbar {
     display: flex;
-    align-items: flex-start;
-    gap: 48px;
+    margin: 0 auto;
 
-    &-title,
-    a {
-      text-decoration: none;
-      list-style-type: none;
-      color: $white;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
+    &-list {
+      display: flex;
+      align-items: flex-start;
+      gap: 48px;
+
+      &-title,
+      a {
+        text-decoration: none;
+        list-style-type: none;
+        color: $white;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
     }
   }
 
