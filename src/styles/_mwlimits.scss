@@ -62,9 +62,9 @@
     flex-shrink: 0;
     background: conic-gradient(
       from 134deg at 50% 50%,
-      rgba(24 26 30 93%) 62.7557deg,
+      rgba(24 26 30 / 93%) 62.7557deg,
       #e52996 173.1274deg,
-      rgba(27 79 144 95%) 206.3422deg
+      rgba(27 79 144 / 95%) 206.3422deg
     );
     filter: blur(96px);
     position: absolute;
