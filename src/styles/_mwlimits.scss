@@ -1,7 +1,7 @@
 .mwlimits {
-  //  no limit
   display: flex;
   position: relative;
+  overflow-x: clip;
 
   &__title {
     display: flex;
@@ -21,6 +21,7 @@
     }
 
     &-p {
+      width: 780px;
       color: $grey;
       font-family: Inter, sans-serif;
       font-size: 20px;
