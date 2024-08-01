@@ -1,51 +1,73 @@
 <?php
 header('Content-Type: application/json');
 
-// Define the path to the JSON file
-$filePath = 'data.json';
+// Absolute path to the JSON file
+$jsonFile = __DIR__ . '/users.json';
 
-// Get the POST data
-$email = $_POST['email'] ?? '';
-$password = $_POST['password'] ?? '';
-$action = $_POST['action'] ?? '';
-
-// Initialize response
-$response = [
-    'status' => 'error',
-    'message' => 'Invalid request'
-];
-
-// Read the existing data from the JSON file
-if (file_exists($filePath)) {
-    $jsonData = file_get_contents($filePath);
-    $data = json_decode($jsonData, true);
-} else {
-    $data = [];
+// Ensure the file exists, create it if it does not
+if (!file_exists($jsonFile)) {
+    file_put_contents($jsonFile, json_encode([]));
 }
 
-// Process based on action
-if ($action === 'login' || $action === 'signup') {
-    // Add the new data
-    $data[] = [
-        'email' => $email,
-        'password' => $password, // In a real application, passwords should be hashed
-        'action' => $action
-    ];
+// Load and decode the JSON data
+$jsonData = file_get_contents($jsonFile);
+$users = json_decode($jsonData, true);
 
-    // Write data to the JSON file
-    if (file_put_contents($filePath, json_encode($data, JSON_PRETTY_PRINT))) {
-        $response = [
-            'status' => 'success',
-            'message' => ucfirst($action) . ' successful!'
-        ];
+// Get POST data
+$email = $_POST['email'];
+$password = $_POST['password'];
+$action = $_POST['action'];
+
+$response = ['message' => ''];
+
+// Handle signup
+if ($action === 'signup') {
+    // Check if user already exists
+    $exists = false;
+    foreach ($users as $user) {
+        if ($user['email'] === $email) {
+            $exists = true;
+            break;
+        }
+    }
+
+    if ($exists) {
+        $response['message'] = 'User already exists. Please use a different email.';
     } else {
-        $response = [
-            'status' => 'error',
-            'message' => 'Failed to write to file'
+        // Add new user
+        $users[] = [
+            'email' => $email,
+            'password' => password_hash($password, PASSWORD_DEFAULT)
         ];
+
+        // Save the updated data to the JSON file
+        file_put_contents($jsonFile, json_encode($users));
+
+        $response['message'] = 'Signup successful!';
     }
 }
 
-// Send the response
+// Handle login
+elseif ($action === 'login') {
+    // Check if user exists and verify password
+    $found = false;
+    foreach ($users as $user) {
+        if ($user['email'] === $email) {
+            $found = true;
+            if (password_verify($password, $user['password'])) {
+                $response['message'] = 'Successfully logged in!';
+            } else {
+                $response['message'] = 'Incorrect password.';
+            }
+            break;
+        }
+    }
+
+    if (!$found) {
+        $response['message'] = 'User not in database.';
+    }
+}
+
+// Return the result as JSON
 echo json_encode($response);
 ?>

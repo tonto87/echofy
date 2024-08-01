@@ -3,7 +3,7 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("semail").value;
 
     if (email) {
       alert("Thank you for subscribing, " + email + "!");
