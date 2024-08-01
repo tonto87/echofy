@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // Absolute path to the JSON file
-$file = './src/datajson/subscribers.json';
+$jsonFile = './src/datajson/users.json';
 
 // Ensure the file exists, create it if it does not
 if (!file_exists($jsonFile)) {
