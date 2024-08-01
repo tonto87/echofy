@@ -202,15 +202,15 @@
               <input
                 class="newsletter__subscribe-input"
                 type="email"
-                id="email"
-                name="email"
+                id="semail"
+                name="semail"
                 placeholder="  echofy@mail.com"
                 required
               />
               <button type="submit" class="newsletter__subscribe-button">
                 Subscribe
               </button>
-            </form>          
+            </form>
           </div>
         </div>
         <div class="newsletter__pic">
@@ -228,8 +228,9 @@
           <div class="loginsignup__form-title">
             <h1 class="loginsignup__form-title-h1">Login & Signup</h1>
           </div>
-          <div class="loginsignup__form-inputs">
-            <form id="loginsignup" action="loginsignup.php" method="POST">
+
+          <form id="loginsignup" action="loginsignup.php" method="POST">
+            <div class="loginsignup__form-inputs">
               <label class="loginsignup__form-inputs-label" for="email"
                 >Email</label
               >
@@ -252,36 +253,34 @@
                 placeholder="*******"
                 required
               />
-            </form>
-          </div>
-          <div class="loginsignup__form-buttons">
-            <button
-              id="loginBtn"
-              type="submit"
-              name="action"
-              value="login"
-              class="loginsignup__form-buttons-button"
-            >
-              Log In
-            </button>
-            <button
-              id="signupBtn"
-              type="submit"
-              name="action"
-              value="signup"
-              class="loginsignup__form-buttons-button"
-            >
-              Sign Up
-            </button>                     
-          </div>
-          </div>
+            </div>
+            <div class="loginsignup__form-buttons">
+              <button
+                id="loginBtn"
+                type="submit"
+                name="action"
+                value="login"
+                class="loginsignup__form-buttons-button"
+              >
+                Log In
+              </button>
+              <button
+                id="signupBtn"
+                type="submit"
+                name="action"
+                value="signup"
+                class="loginsignup__form-buttons-button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 
       <script src="./src/scripts/loginsignup.js"></script>
       <script src="./src/scripts/subscribe.js"></script>
       <script src="./src/scripts/signupdata.js"></script>
-
     </main>
   </body>
 </html>
