@@ -36,9 +36,10 @@
           </ul>
         </div>
         <div class="header__sign">
-          <a class="header__sign-login" href="">Log In</a>
+          <a id="loginBtn" class="header__sign-login" href="#">Log In</a>
+
           <div class="header__sign-signup">
-            <a href="">Sign Up</a>
+            <a id="signupBtn" href="#">Sign Up</a>
           </div>
         </div>
       </div>
@@ -52,7 +53,10 @@
             streaming. With our ad-free platform, you’ll have access to millions
             to songs
           </p>
-          <button class="mwlimits__title-button">Sign Up</button>
+
+          <button id="mwlimitsBtn" class="mwlimits__title-button">
+            Sign Up
+          </button>
         </div>
         <div class="mwlimits__rectangle-color"></div>
         <div class="mwlimits__rectangle-pic">
@@ -180,6 +184,7 @@
           </div>
         </div>
       </section>
+
       <section class="newsletter">
         <div class="newsletter__rectangle-color">
           <div class="newsletter__title">
@@ -212,6 +217,43 @@
           />
         </div>
       </section>
+
+      <section id="loginsignup" class="loginsignup">
+        <div class="loginsignup__form">
+          <button id="cartClose" class="loginsignup__form-button">X</button>
+          <div class="loginsignup__form-title">
+            <h1 class="loginsignup__form-title-h1">Login & Signup</h1>
+          </div>
+          <div class="loginsignup__form-inputs">
+            <label class="loginsignup__form-inputs-label" for="">Email</label>
+            <input
+              class="loginsignup__form-inputs-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="  echofy@mail.com"
+              required
+            />
+            <label class="loginsignup__form-inputs-label" for=""
+              >Password</label
+            >
+            <input
+              class="loginsignup__form-inputs-input"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="  *******"
+              required
+            />
+          </div>
+          <div class="loginsignup__form-buttons">
+            <button class="loginsignup__form-buttons-button">Log In</button>
+            <button class="loginsignup__form-buttons-button">Sign Up</button>
+          </div>
+        </div>
+      </section>
+
+      <script src="./src/scripts/loginsignup.js"></script>
     </main>
   </body>
 </html>
