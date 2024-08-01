@@ -1,0 +1,170 @@
+.libraries {
+  width: 100%;
+  padding: 0 100px;
+
+  &-explore {
+    width: 100%;
+
+    &__title {
+      width: 50%;
+      color: white;
+      font-family: Inter, sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 100px;
+    }
+
+    &__info {
+      width: 100%;
+      display: flex;
+
+      &-text {
+        width: 52%;
+        color: white;
+        font-family: Inter, sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      &-slide {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        padding-right: 175px;
+        gap: 5px;
+
+        &-arrowL {
+          width: 50px;
+          height: 50px;
+          border: 1px solid $ldark;
+          border-radius: 50%;
+          background-color: $dark;
+        }
+
+        &-arrowL:hover {
+          border: 2px solid $grayline;
+          transition: 0.1s;
+        }
+
+        &-arrowR {
+          width: 50px;
+          height: 50px;
+          border: 1px solid $ldark;
+          border-radius: 50%;
+          background-color: $dark;
+        }
+
+        &-arrowR:hover {
+          border: 2px solid $grayline;
+          transition: 0.1s;
+        }
+      }
+    }
+  }
+
+  &-hits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    gap: 10px;
+
+    &__genres {
+      display: flex;
+      width: 300px;
+      height: 450px;
+      overflow: hidden;
+      border-radius: 24px;
+      position: relative;
+      justify-content: space-between;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &-insider {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+
+        &-btn {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-bottom: 150px;
+          border: none;
+
+          & img {
+            width: 30px;
+            height: 30px;
+            padding: 4px 0 0 4px;
+          }
+        }
+
+        &-btn:hover {
+          transition: 0.4s;
+
+          & img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        &-stats {
+          color: $white;
+          font-family: Lateef, sans-serif;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 15px;
+          line-height: normal;
+          text-align: center;
+          display: flex;
+          gap: 5px;
+
+          &-icon {
+            width: 20px;
+            height: 20px;
+          }
+
+          &-genre {
+            color: $white;
+            font-family: Lateef, sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          &-info {
+            &-num {
+              color: $white;
+              font-family: Lateef, sans-serif;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+
+    &__genres:hover {
+      transition: 0.2s;
+      border: 2px solid $grayline;
+      gap: 5px;
+    }
+  }
+}

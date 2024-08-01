@@ -36,15 +36,37 @@
           </ul>
         </div>
         <div class="header__sign">
-          <a class="header__sign-login" href="">Log In</a>
+          <a id="loginBtn" class="header__sign-login" href="#">Log In</a>
+
           <div class="header__sign-signup">
-            <a href="">Sign Up</a>
+            <a id="signupBtn" href="#">Sign Up</a>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="mwlimits"></section>
+      <section class="mwlimits">
+        <div class="mwlimits__title">
+          <h1 class="mwlimits__title-h1">Music Without Limits</h1>
+          <p class="mwlimits__title-p">
+            Say goodbye to interruptions and enjoy uninterrupted music
+            streaming. With our ad-free platform, you’ll have access to millions
+            to songs
+          </p>
+
+          <button id="mwlimitsBtn" class="mwlimits__title-button">
+            Sign Up
+          </button>
+        </div>
+        <div class="mwlimits__rectangle-color"></div>
+        <div class="mwlimits__rectangle-pic">
+          <img
+            class="mwlimits__rectangle-pic-img"
+            src="src/assets/images/joshuafullerunsplashtransparent.png"
+            alt=""
+          />
+        </div>
+      </section>
 
       <section class="hotTracks">
         <div class="hotTracks__text">
@@ -140,6 +162,124 @@
         </div>
         <div class="hotTracks__bgc_ofHot"></div>
       </section>
+
+      <section class="libraries">
+        <div class="libraries-explore">
+          <div class="libraries-explore__title">
+            <h1>Explore Endless Music Libraries</h1>
+          </div>
+          <div class="libraries-explore__info">
+            <div class="libraries-explore__info-text">
+              <p>
+                Say goodbye to interruptions and enjoy uninterrupted music
+                streaming. With our ad-free platform, you’ll have access to
+                millions to songs
+              </p>
+            </div>
+            <div class="libraries-explore__info-slide">
+              <button class="libraries-explore__info-slide-arrowL">
+                <img
+                  class="libraries-explore__info-slide-arrowL-img"
+                  src="./src/assets/libraries/Arrow_Left_MD.svg"
+                  alt=""
+                />
+              </button>
+              <button class="libraries-explore__info-slide-arrowR">
+                <img
+                  class="libraries-explore__info-slide-arrowR-img"
+                  src="./src/assets/libraries/Arrow_Right_MD.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="libraries-hits">
+          <div id="firstGenre" class="libraries-hits__genres">
+            <img src="./src/assets/libraries/genre1.jpg" alt="" />
+            <div class="libraries-hits__genres-insider">
+              <button class="libraries-hits__genres-insider-btn">
+                <img src="./src/assets/libraries/play.png" alt="" />
+              </button>
+              <div class="libraries-hits__genres-insider-stats">
+                <div class="libraries-hits__genres-insider-stats-icon">
+                  <img src="./src/assets/libraries/music.png" alt="" />
+                </div>
+                <h1 class="libraries-hits__genres-insider-stats-genre">
+                  HIP HOP
+                </h1>
+              </div>
+              <div class="libraries-hits__genres-insider-stats-info">
+                <p class="libraries-hits__genres-insider-stats-info-num">
+                  Songs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="secondGenre" class="libraries-hits__genres">
+            <img src="./src/assets/libraries/genre2.jpg" alt="" />
+            <div class="libraries-hits__genres-insider">
+              <button class="libraries-hits__genres-insider-btn">
+                <img src="./src/assets/libraries/play.png" alt="" />
+              </button>
+              <div class="libraries-hits__genres-insider-stats">
+                <div class="libraries-hits__genres-insider-stats-icon">
+                  <img src="./src/assets/libraries/music.png" alt="" />
+                </div>
+                <h1 class="libraries-hits__genres-insider-stats-genre">SOUL</h1>
+              </div>
+              <div class="libraries-hits__genres-insider-stats-info">
+                <p class="libraries-hits__genres-insider-stats-info-num">
+                  Songs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="thirdGenre" class="libraries-hits__genres">
+            <img src="./src/assets/libraries/genre3.jpg" alt="" />
+            <div class="libraries-hits__genres-insider">
+              <button class="libraries-hits__genres-insider-btn">
+                <img src="./src/assets/libraries/play.png" alt="" />
+              </button>
+              <div class="libraries-hits__genres-insider-stats">
+                <div class="libraries-hits__genres-insider-stats-icon">
+                  <img src="./src/assets/libraries/music.png" alt="" />
+                </div>
+                <h1 class="libraries-hits__genres-insider-stats-genre">
+                  K-POP
+                </h1>
+              </div>
+              <div class="libraries-hits__genres-insider-stats-info">
+                <p class="libraries-hits__genres-insider-stats-info-num">
+                  Songs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="fourthGenre" class="libraries-hits__genres">
+            <img src="./src/assets/libraries/genre4.jpg" alt="" />
+            <div class="libraries-hits__genres-insider">
+              <button class="libraries-hits__genres-insider-btn">
+                <img src="./src/assets/libraries/play.png" alt="" />
+              </button>
+              <div class="libraries-hits__genres-insider-stats">
+                <div class="libraries-hits__genres-insider-stats-icon">
+                  <img src="./src/assets/libraries/music.png" alt="" />
+                </div>
+                <h1 class="libraries-hits__genres-insider-stats-genre">
+                  SUMMER HITS
+                </h1>
+              </div>
+              <div class="libraries-hits__genres-insider-stats-info">
+                <p class="libraries-hits__genres-insider-stats-info-num">
+                  Songs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="trentingArtist">
         <div class="trentingArtist__text">
           <h2 class="trentingArtist__text-t">TRENDING ARTISTS</h2>
@@ -213,6 +353,166 @@
           </div>
         </div>
       </section>
+
+      <section class="newsletter">
+        <div class="newsletter__rectangle-color">
+          <div class="newsletter__title">
+            <h2 class="newsletter__title-h2">Don’t Miss a Beat!</h2>
+            <p class="newsletter__title-p">
+              Don’t miss out on the latest music news, exclusive offers and
+              promotions, and new releases by signing up for our newsletter.
+              Stay in the loop with the freshest music and be the first to know
+              about upcoming events, artists spotlights, and more. Sign up now
+              and never miss a beat!
+            </p>
+          </div>
+          <div class="newsletter__subscribe">
+            <form id="subscribe" action="subscribe.php" method="POST">
+              <input
+                class="newsletter__subscribe-input"
+                type="email"
+                id="semail"
+                name="semail"
+                placeholder="  echofy@mail.com"
+                required
+              />
+              <button type="submit" class="newsletter__subscribe-button">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="newsletter__pic">
+          <img
+            class="newsletter__pic-img"
+            src="src/assets/images/headphone.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section class="singer">
+        <div class="singer__info">
+          <div class="singer__info-container">
+            <h1 class="singer__info-title">Taylor Alison Swift</h1>
+            <p class="singer__info-paragraf">
+              Taylor Alison Swift  is an American singer-songwriter. A subject
+              of widespread public interest, she has been named by various
+              publications as on psdjfe eddasoo caj
+            </p>
+          </div>
+          <img class="singer__info-img" src="" alt="" />
+        </div>
+        <div class="singer__playlist">
+          <div class="singer__playlist-navbar">
+            <div class="singer__playlist-title">
+              <h4>Latest Songs</h4>
+            </div>
+            <div class="singer__playlist-paragraf">
+              <p>view all</p>
+            </div>
+          </div>
+          <div class="singer__playlist-allmusicContainer">
+            <div class="singer__playlist-allmusicContainer-info">
+              <img
+                class="singer__playlist-img"
+                src="./src/assets/images/antihero.png"
+                alt=""
+              />
+              <div class="singer__playlist-title">
+                <h6>Anti-Hero</h6>
+                <p>Taylor Swift</p>
+              </div>
+              <audio src="./src/music/music1.mp3" value="Marjorie"></audio>
+              <button class="singer__playlist-btn" data-action="play">
+                <img
+                  class="singer__playlist-icon"
+                  src="./src/assets/icons/play.png"
+                />
+              </button>
+            </div>
+            <div class="singer__playlist-allmusicContainer-info">
+              <img
+                class="singer__playlist-img"
+                src="./src/assets/images/blankspace.png"
+                alt=""
+              />
+              <div class="singer__playlist-title">
+                <h6>Anti-Hero</h6>
+                <p>Taylor Swift</p>
+              </div>
+              <audio src="./src/music/music1.mp3" value="Marjorie"></audio>
+              <button class="singer__playlist-btn" data-action="play">
+                <img
+                  class="singer__playlist-icon"
+                  src="./src/assets/icons/play.png"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="loginsignup" class="loginsignup">
+        <div class="loginsignup__form">
+          <button id="cartClose" class="loginsignup__form-button">X</button>
+          <div class="loginsignup__form-title">
+            <h1 class="loginsignup__form-title-h1">Login & Signup</h1>
+          </div>
+
+          <form id="loginsignup" action="loginsignup.php" method="POST">
+            <div class="loginsignup__form-inputs">
+              <label class="loginsignup__form-inputs-label" for="email"
+                >Email</label
+              >
+              <input
+                class="loginsignup__form-inputs-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="echofy@mail.com"
+                required
+              />
+              <label class="loginsignup__form-inputs-label" for="password"
+                >Password</label
+              >
+              <input
+                class="loginsignup__form-inputs-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="*******"
+                required
+              />
+            </div>
+            <div class="loginsignup__form-buttons">
+              <button
+                id="loginBtn"
+                type="submit"
+                name="action"
+                value="login"
+                class="loginsignup__form-buttons-button"
+              >
+                Log In
+              </button>
+              <button
+                id="signupBtn"
+                type="submit"
+                name="action"
+                value="signup"
+                class="loginsignup__form-buttons-button"
+              >
+                Sign Up
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <script src="./src/scripts/loginsignup.js"></script>
+      <script src="./src/scripts/subscribe.js"></script>
+      <script src="./src/scripts/signupdata.js"></script>
+      <script src="./src/scripts/singersInfo.js"></script>
     </main>
     <script src="./src/scripts/hottest.js"></script>
   </body>
