@@ -1,0 +1,91 @@
+.singer {
+  color: aliceblue;
+  display: flex;
+  background: rgb(3 1 46);
+  background: linear-gradient(
+    0deg,
+    rgb(2 0 36) 0%,
+    rgb(103 3 115 / 72%) 100%,
+    rgb(0 212 255) 100%
+  );
+  margin-top: 50%;
+  justify-content: space-around;
+  padding: 87px 207px;
+
+  &__info {
+    &-title {
+      width: 656px;
+      font-size: 92px;
+      color: $white;
+      text-align: left;
+    }
+
+    &-paragraf {
+      width: 517px;
+      color: $dgrey;
+    }
+
+    &-img {
+      height: 12%;
+    }
+  }
+
+  &__playlist {
+    &-navbar {
+      display: flex;
+      gap: 100px;
+    }
+
+    &-paragraf {
+      font-size: 26px;
+      font-family: Lateef, sans-serif;
+      color: $dgrey;
+      text-align: left;
+    }
+
+    &-allmusicContainer {
+      &-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 30px;
+      }
+    }
+
+    &-title {
+      font-size: 32px;
+      font-family: Lateef, sans-serif;
+      color: $white;
+      text-align: left;
+      margin-right: 50px;
+
+      h6 {
+        font-size: 32px;
+        font-family: Lateef, sans-serif;
+        color: $white;
+        text-align: left;
+      }
+
+      p {
+        font-size: 26px;
+        font-family: Lateef, sans-serif;
+        color: $dgrey;
+        text-align: left;
+      }
+    }
+
+    &-btn {
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      top: -2px;
+      left: -7px;
+    }
+
+    &-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
