@@ -8,9 +8,10 @@
     rgb(103 3 115 / 72%) 100%,
     rgb(0 212 255) 100%
   );
-  margin-top: 50%;
   justify-content: space-around;
   padding: 87px 207px;
+  position: relative;
+  top: 545px;
 
   &__info {
     &-title {
