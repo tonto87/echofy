@@ -14,6 +14,10 @@
   top: 545px;
 
   &__info {
+    width: 656px;
+    position: absolute;
+    left: 120px;
+
     &-title {
       width: 656px;
       font-size: 92px;
@@ -31,7 +35,15 @@
     }
   }
 
+  &__pic-img {
+    position: relative;
+    right: 124px;
+  }
+
   &__playlist {
+    position: absolute;
+    right: 120px;
+
     &-navbar {
       display: flex;
       gap: 100px;

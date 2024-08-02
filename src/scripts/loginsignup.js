@@ -8,7 +8,7 @@ var shotwbutons = [
 ];
 
 shotwbutons.forEach(function (btn) {
-  console.log(btn);
+  // console.log(btn);
   btn.onclick = () => (loginsignup.style.display = "flex");
 });
 
